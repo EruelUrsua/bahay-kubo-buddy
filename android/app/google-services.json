@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "595442860283",
+    "firebase_url": "https://bahay-kubo-buddy.firebaseio.com",
+    "project_id": "bahay-kubo-buddy",
+    "storage_bucket": "bahay-kubo-buddy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595442860283:android:9a65259d9a67c210ce305e",
+        "android_client_info": {
+          "package_name": "com.example.bahay_kubo_buddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595442860283-19eefr4ob6g9a9sb0bjvmp6imnn47ki0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC72llpiT1z2cuvahqiMkIPm9yuA0UgLk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595442860283-19eefr4ob6g9a9sb0bjvmp6imnn47ki0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
