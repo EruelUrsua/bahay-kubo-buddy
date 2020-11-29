@@ -7,57 +7,40 @@ class Settings extends StatefulWidget {
 }
 
 class _SettingsState extends State<Settings> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      children: <Widget>[
-        child: Column(
-    children: <Widget>[
-        ListTile(
-
-
+      body: Column(
+        children: <Widget>[
+          ListTile(
+              title: Text(
+                '                  Settings',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.black,
+                ),
+              ),
+              onTap: null),
+          ListTile(
             title: Text(
-              '                  Settings',
+              '                 Parental Controls',
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.black,
               ),
             ),
-            onTap: null
-        ),
-
-
-
-
-        ListTile(
-          title: Text(
-            '                 Parental Controls',
-            style: TextStyle(
-              fontSize: 18,
-            ),
+            onTap: null,
           ),
-          onTap: null,
-
-
-        ),
-
-
-        ListTile(
-          title: Text(
-            '                  Study Day',
-            style: TextStyle(
-              fontSize: 18,
-
+          ListTile(
+            title: Text(
+              '                  Study Day',
+              style: TextStyle(
+                fontSize: 18,
+              ),
             ),
-
+            onTap: null,
           ),
-          onTap: null,
-        ),
-        ],),
+        ],
       ),
-
     );
   }
 }

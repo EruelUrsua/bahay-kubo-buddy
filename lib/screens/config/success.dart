@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:bahay_kubo_buddy/lib2/main.dart';
 import 'package:bahay_kubo_buddy/screens/greeting.dart';
 import 'package:flutter/material.dart';
 
@@ -52,7 +53,7 @@ class _successPageState extends State<successPage> {
       new PageRouteBuilder(
         maintainState: true,
         opaque: true,
-        pageBuilder: (context, _, __) => new GreetingScreen(),
+        pageBuilder: (context, _, __) => new UserHome(),
         transitionDuration: const Duration(milliseconds: 250),
         transitionsBuilder: (context, anim1, anim2, child) {
           return new FadeTransition(child: child, opacity: anim1);

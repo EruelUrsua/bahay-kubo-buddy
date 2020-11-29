@@ -11,13 +11,9 @@ class _StudyDayState extends State<StudyDay> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      Row:   
-      Children: <Widget> [
-
-        child: ListTile(
-
-
-            title: Text(
+      body: Container(
+        ListTile(
+      title: Text(
               '                  Home',
               style: TextStyle(
                 fontSize: 18,
@@ -26,10 +22,7 @@ class _StudyDayState extends State<StudyDay> {
             onTap: null
         ),
       ),
-
-
-
-
+        Container(
         ListTile(
           title: Text(
             '                 Settings',
@@ -40,7 +33,7 @@ class _StudyDayState extends State<StudyDay> {
           onTap: null,
 
 
-        ),
+        ),),
 
 
         ListTile(
@@ -53,8 +46,6 @@ class _StudyDayState extends State<StudyDay> {
 
           ),
           onTap: null,
-        ),
-    ]
-    );
+        ),);,
   }
 }

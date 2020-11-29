@@ -1,3 +1,4 @@
+import 'package:bahay_kubo_buddy/screens/config/config1.dart';
 import 'package:bahay_kubo_buddy/screens/greeting.dart';
 import 'package:bahay_kubo_buddy/screens/accounts/sign_with_email.dart';
 import 'package:bahay_kubo_buddy/screens/topSide.dart';
@@ -110,8 +111,7 @@ class _SignUp extends State<SignUp> {
               child: TextFormField(
                 keyboardType: TextInputType.text,
                 controller: _userPasswordController,
-                obscureText:
-                    !_passwordVisible, //This will obscure text dynamically
+                obscureText: !_passwordVisible,
                 decoration: InputDecoration(
                   labelText: 'Password',
                   labelStyle: TextStyle(
@@ -161,7 +161,7 @@ class _SignUp extends State<SignUp> {
                 padding: const EdgeInsets.only(top: 9.0, bottom: 9.0),
                 child: RaisedButton(
                   child: Text(
-                    'Login',
+                    'Sign Up',
                     style: TextStyle(
                       fontFamily: 'Poppins-Med',
                       color: Colors.white,
@@ -173,6 +173,12 @@ class _SignUp extends State<SignUp> {
                         SnackBar(
                           content:
                               Text('Registered! Please go back to Sign In.'),
+                        ),
+                      );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Config_1(),
                         ),
                       );
                     }
@@ -188,18 +194,21 @@ class _SignUp extends State<SignUp> {
                 ),
               );
             }),
-            FlatButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => SignWithEmail(),
-                  ),
-                );
-              },
-              child: Text(
-                'or Sign In',
-                style: TextStyle(fontFamily: 'Poppins-SemiBold'),
+            Padding(
+              padding: const EdgeInsets.all(13.0),
+              child: FlatButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SignWithEmail(),
+                    ),
+                  );
+                },
+                child: Text(
+                  'or Sign In',
+                  style: TextStyle(fontFamily: 'Poppins-SemiBold'),
+                ),
               ),
             ),
           ],
